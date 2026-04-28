@@ -1,4 +1,4 @@
-import type { Adventure } from "../../model/Adventure";
+import type { Adventure } from "../../model/adventure/Adventure";
 
 export const testForestAdventure: Adventure = {
   meta: {

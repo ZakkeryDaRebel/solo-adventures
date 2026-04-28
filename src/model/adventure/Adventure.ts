@@ -1,4 +1,4 @@
-import type { NodeType } from "./node/NodeType";
+import type { NodeType } from "../node/NodeType";
 
 export interface Adventure {
   meta: {

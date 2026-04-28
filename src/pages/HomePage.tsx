@@ -1,4 +1,4 @@
-import { adventures } from "../model/adventureLoader";
+import { adventures } from "../model/adventure/adventureLoader";
 import AdventureCard from "../components/AdventureCard";
 import { useNavigate } from "react-router-dom";
 

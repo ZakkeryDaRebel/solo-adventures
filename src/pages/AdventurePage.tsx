@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { adventures } from "../model/adventureLoader";
+import { adventures } from "../model/adventure/adventureLoader";
 import StoryNode from "../components/StoryNode";
 import FightPage from "./FightPage";
 import type { NodeType } from "../model/node/NodeType";
