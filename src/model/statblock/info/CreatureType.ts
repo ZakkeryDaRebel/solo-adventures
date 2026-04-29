@@ -1,0 +1,16 @@
+export const CreatureType = {
+  Aberrations: "Aberrations",
+  Beasts: "Beasts",
+  Celestials: "Celestials",
+  Constructs: "Constructs",
+  Dragons: "Dragons",
+  Elementals: "Elementals",
+  Fey: "Fey",
+  Fiends: "Fiends",
+  Giants: "Giants",
+  Humanoids: "Humanoids",
+  Monstrosities: "Monstrosities",
+  Oozes: "Oozes",
+  Plants: "Plants",
+  Undead: "Undead",
+} as const;
