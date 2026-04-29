@@ -29,8 +29,6 @@ export interface Statblock {
   skills: Record<keyof typeof Skills, number>;
 
   // Traits
-  //damage resistances, immunities, vulnerabilities
-  //condition immunities
   senses: (typeof Sense)[];
   languages: (typeof Languages)[];
   challengeRating: string;
