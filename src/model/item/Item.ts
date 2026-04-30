@@ -1,4 +1,7 @@
+import type { Cost } from "./Cost";
+
 export interface Item {
   name: string;
-  cost: number;
+  cost: Cost;
+  weight: number;
 }
