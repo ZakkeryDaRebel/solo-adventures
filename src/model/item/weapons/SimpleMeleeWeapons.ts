@@ -1,6 +1,7 @@
 import { diceConstructor } from "../../dice/Dice";
 import { Coin } from "../Cost";
-import { weaponConstructor, WeaponProperties, type Weapon } from "./Weapon";
+import { WeaponProperties, type Weapon } from "./Weapon";
+import { weaponConstructor } from "./WeaponConstructor";
 import { Damage } from "../../statblock/info/Damage";
 
 export const Spear: Weapon = weaponConstructor(
