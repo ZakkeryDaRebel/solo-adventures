@@ -12,8 +12,8 @@
 
 - src                           Source Code
     |- adventures                   All the current adventures on the website
-    |   |- *test-forest                 ChatGPT and I created adventure to test functionality during development
-    |   \- goblin-westwood              First adventure written by me (Under Development)
+    |   |- goblin-westwood              First adventure written by me (Under Development)
+    |   \- test-forest                 ChatGPT and I created adventure to test functionality during development
     |
     |- assets                       React Template Images (Might delete later)
     |   |- hero.png
@@ -30,8 +30,26 @@
     |   |   |- Adventure.ts                 Template that contains all the meta data (id, title, description, and starting node), in addition to all the story nodes
     |   |   \- AdventureLoader.ts
     |   |
+    |   |- dice                         Code regarding dice
+    |   |   |- Dice.ts                      Interface for a Dice object, and a DiceConstructor
+    |   |   \- DiceRoller.ts                Function to roll the dice
+    |   |
     |   |- item                         Code to create a list of all the items that can be found during adventures
+    |   |   |- armor                        Code relating to Armor (extending from Item)
+    |   |   |   |- Armor.ts                     Template Armor object and the ArmorType enum
+    |   |   |   |- ArmorConstructor.ts          Function to create an Armor instance
+    |   |   |   \- Shield.ts                    Const Shield object
+    |   |   |
+    |   |   |- weapons                      Code relating to Weapons (extending from Item)
+    |   |   |   |- SimpleMeleeWeapons           Const objects for PHB Simple Melee Weapons
+    |   |   |   |- Weapon.ts                    Template Weapon object with AttackDamage template and WeaponProeprties enum
+    |   |   |   \- WeaponConstructor.ts         Function to create a Weapon instance
+    |   |   |
+    |   |   |- Cost.ts                      Object to hold the value of an item with a Coin Enum
     |   |   \- Item.ts                      Base type of an Item
+    |   |
+    |   |- monstermanual                Code regarding all the monsters on the website
+    |   |   \- Goblin.ts                    Const GoblinWarrior object
     |   |
     |   |- node                         Code regarding nodes or interactable spots during the story
     |   |   |- Choice.ts                    A Choice shows text describing the choice and the node that you go to when selected
@@ -47,6 +65,7 @@
     |       |- info                         Code regarding information that is on a statblock
     |       |   |- AbilityScores.ts             Enum for the 6 types of Ability Scores
     |       |   |- Alignment.ts                 Enum for the 9 types of Alignment
+    |       |   |- Condition.ts                 Enum for the 15 types of Conditions
     |       |   |- CreatureType.ts              Enum for the 14 types of Creatures
     |       |   |- Damage.ts                    Enum for the 13 types of Damage
     |       |   |- Languages.ts                 Enum for the Languages that can be found in D&D
@@ -54,6 +73,8 @@
     |       |   |- Size.ts                      Enum for the 6 size classifications of D&D creatures
     |       |   \- Skills.ts                    Enum for the 18 types of Skills (for proficiency)
     |       |
+    |       |- DamageStatblock.ts           Extends Statblock to add damage resistances, immunities, and vulnerabilities, in addition to condition immunities
+    |       |- LegendaryStatblock.ts        Extends Statblock to add Legendary Reactions and Resistances
     |       |- SpellcasterStatblock.ts      Extends Statblock to add Spellcasting information in
     |       \- Statblock.ts                 Base information that is in all Statblocks (Under development)
     |
@@ -67,5 +88,18 @@
     |- index.css
     \- main.tsx
 
-- tests
+- tests                         Tests to ensure my code is working properly
+    |- jest                         Jest tests for Typescript
+    |   |- armor                        Code to test Armor Constructor
+    |   |   \- ArmorConstructor.test.ts
+    |   |
+    |   |- dice                         Code to test Dice Constructor and Roller
+    |   |   \- DiceRoller.test.ts
+    |   |
+    |   \- weapons                      Code to test Weapon Constructor
+    |       \- WeaponConstructor.test.ts
+    |
+    \- playwright                   Playwright tests for React / Frontend user interaction
+        \- example.spec.ts              Code to test if my home page is loading, the adventure buttons take you to the right url, and going through the whole test adventure
+
 ```
