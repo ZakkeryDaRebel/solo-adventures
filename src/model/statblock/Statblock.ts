@@ -7,6 +7,7 @@ import type { Sense } from "./info/Sense";
 import type { Size } from "./info/Size";
 import type { Skills } from "./info/Skills";
 import type { Dice } from "../dice/Dice";
+import type { Cost } from "../item/Cost";
 
 export interface Statblock {
   // Base information
@@ -43,5 +44,7 @@ export interface Statblock {
   reactions: null;
 
   // Loot
-  loot: Item[];
+  equipment: Item[]; // Items holding or worn
+  loot: Item[]; // Items or gear stored in backpack
+  coins: Cost[]; // Coins in money pouch
 }
