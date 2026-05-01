@@ -7,10 +7,12 @@ import {
 import {
   weaponConstructor,
   PlusNumWeaponConstructor,
+  simplePlusNumWeaponConstructor,
 } from "../../../../../src/model/item/weapons/WeaponConstructor";
 import type { Cost } from "../../../../../src/model/item/Cost";
 import { Damage } from "../../../../../src/model/statblock/info/Damage";
 import { diceConstructor } from "../../../../../src/model/dice/Dice";
+import { Spear } from "../../../../../src/model/item/weapons/SimpleMeleeWeapons";
 
 const spearName: string = "Spear";
 const spearPlusName: string = "Spear, +1";
@@ -103,6 +105,22 @@ describe("Weapon Constructor - Spear", () => {
       spearPlusBonus,
       spearPlusBonus,
       spearMastery,
+    );
+  });
+
+  test("Simple Plus Num Weapon Constructor adds bonuses correctly", () => {
+    const plusTenSpear = simplePlusNumWeaponConstructor(Spear, 10);
+
+    compare(
+      plusTenSpear,
+      "Spear, +10",
+      Spear.cost,
+      Spear.weight,
+      Spear.damage,
+      Spear.properties,
+      10,
+      10,
+      Spear.mastery,
     );
   });
 });

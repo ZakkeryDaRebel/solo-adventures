@@ -50,3 +50,13 @@ export function PlusNumWeaponConstructor(
     mastery,
   );
 }
+
+export function simplePlusNumWeaponConstructor(
+  weapon: Weapon,
+  numIncrease: number,
+): Weapon {
+  weapon.addToDamage += numIncrease;
+  weapon.addToHit += numIncrease;
+  weapon.name += ", +" + numIncrease;
+  return weapon;
+}

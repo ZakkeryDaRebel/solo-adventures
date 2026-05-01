@@ -37,3 +37,12 @@ export function plusNumArmorConstructor(
     other,
   );
 }
+
+export function simplePlusNumArmorConstructor(
+  armor: Armor,
+  numIncrease: number,
+): Armor {
+  armor.baseAC += numIncrease;
+  armor.name += ", +" + numIncrease;
+  return armor;
+}

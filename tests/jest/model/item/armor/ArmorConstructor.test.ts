@@ -2,8 +2,10 @@ import { ArmorType, Armor } from "../../../../../src/model/item/armor/Armor";
 import {
   armorConstructor,
   plusNumArmorConstructor,
+  simplePlusNumArmorConstructor,
 } from "../../../../../src/model/item/armor/ArmorConstructor";
 import { Cost } from "../../../../../src/model/item/Cost";
+import { Shield } from "../../../../../src/model/item/armor/Shield";
 
 const chainName: string = "Chain Mail";
 const chainPlusName: string = "Chain Mail, +1";
@@ -73,6 +75,20 @@ describe("Armor Constructor", () => {
       chainPlusAC,
       chainType,
       chainOther,
+    );
+  });
+
+  test("Simple Plus Num Armor Constructor increases AC and name by 10", () => {
+    const plusTenShield = simplePlusNumArmorConstructor(Shield, 10);
+
+    compare(
+      plusTenShield,
+      "Shield, +10",
+      Shield.cost,
+      Shield.weight,
+      12,
+      Shield.type,
+      Shield.other,
     );
   });
 });
