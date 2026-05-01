@@ -1,15 +1,15 @@
-import { Alignment } from "../statblock/info/Alignment";
-import { CreatureType } from "../statblock/info/CreatureType";
-import { Size } from "../statblock/info/Size";
-import type { Statblock } from "../statblock/Statblock";
-import { AbilityScores } from "../statblock/info/AbilityScores";
-import { Sense } from "../statblock/info/Sense";
-import { Skills } from "../statblock/info/Skills";
-import { Languages } from "../statblock/info/Languages";
-import { Spear } from "../item/weapons/SimpleMartialWeapons";
-import { roll } from "../dice/DiceRoller";
-import { diceConstructor } from "../dice/Dice";
-import { Coin } from "../item/Cost";
+import { Alignment } from "../../statblock/info/Alignment";
+import { CreatureType } from "../../statblock/info/CreatureType";
+import { Size } from "../../statblock/info/Size";
+import type { Statblock } from "../../statblock/Statblock";
+import { AbilityScores } from "../../statblock/info/AbilityScores";
+import { Sense } from "../../statblock/info/Sense";
+import { Skills } from "../../statblock/info/Skills";
+import { Languages } from "../../statblock/info/Languages";
+import { Spear } from "../../item/weapons/SimpleMeleeWeapons";
+import { roll } from "../../dice/DiceRoller";
+import { diceConstructor } from "../../dice/Dice";
+import { Coin } from "../../item/Cost";
 
 // export const GoblinArcher: Statblock = {}
 
