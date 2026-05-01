@@ -26,7 +26,7 @@ export const WeaponProperties = {
   Special: "Special", // description
   Thrown: "Thrown", // (short / long)
   TwoHanded: "Two-Handed",
-  ["Two Handed"]: "TwoHanded",
+  ["Two-Handed"]: "TwoHanded",
   Versatile: "Versatile", // (bigger die)
 } as const;
 
