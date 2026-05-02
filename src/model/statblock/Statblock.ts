@@ -8,6 +8,7 @@ import type { Size } from "./info/Size";
 import type { Skills } from "./info/Skills";
 import type { Dice } from "../dice/Dice";
 import type { Cost } from "../item/Cost";
+import type { Action } from "./info/Action";
 
 export interface Statblock {
   // Base information
@@ -39,9 +40,9 @@ export interface Statblock {
   //other traits (like passives)
 
   // Actions
-  actions: null;
-  bonusActions: null;
-  reactions: null;
+  actions: Action[];
+  bonusActions: Action[];
+  reactions: Action[];
 
   // Loot
   equipment: Item[]; // Items holding or worn
