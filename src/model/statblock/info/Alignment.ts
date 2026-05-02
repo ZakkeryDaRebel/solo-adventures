@@ -8,6 +8,7 @@ export const Alignment = {
   LE: "Lawful Evil",
   NE: "Neutral Evil",
   CE: "Chaotic Evil",
+  UA: "Unaligned",
   // Have to create the reverse so that the code
   //   can register that LG is Lawful Good, etc.
   ["Lawful Good"]: "LG",
@@ -19,4 +20,5 @@ export const Alignment = {
   ["Lawful Evil"]: "LE",
   ["Neutral Evil"]: "NE",
   ["Chaotic Evil"]: "CE",
+  ["Unaligned"]: "UA",
 } as const;
