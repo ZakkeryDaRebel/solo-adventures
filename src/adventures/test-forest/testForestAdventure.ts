@@ -1,4 +1,7 @@
 import type { Adventure } from "../../model/adventure/Adventure";
+import { changeName } from "../../model/monstermanual/ChangeName";
+import { GuardSpear } from "../../model/monstermanual/g/Guard";
+import { Wolf } from "../../model/monstermanual/w/Wolf";
 
 export const testForestAdventure: Adventure = {
   meta: {
@@ -42,21 +45,24 @@ export const testForestAdventure: Adventure = {
       content: [
         {
           type: "paragraph",
-          text: "While you walk forward, you realize that these are wolf tracks, and sure enough, you encounter a wolf! Oh no! Roll for initiative!",
+          text: "While you walk forward, you realize that these are wolf tracks. As you get closer, you see the owner of the footprints! There are 2 Wolves, and they seem to be ready to attack this Guy with a Spear! He calls out, asking for assistance as he sees you approach.",
         },
       ],
-      choices: [{ text: "I got higher than a -5", next: "fight_wolf" }],
+      choices: [{ text: "Roll for initiative!", next: "fight_wolf" }],
     },
     fight_wolf: {
       type: "fight",
-      enemy: "Wolf",
-      enemyHP: 12,
-      enemyHitDC: 10,
-      enemyAttack: 4,
+      enemies: [
+        changeName(Wolf, Wolf.name + " #1"),
+        changeName(Wolf, Wolf.name + " #2"),
+      ],
+      allies: [GuardSpear],
+
       battlefield: [
-        ["_", "W", "_"],
-        ["_", "_", "_"],
-        ["_", "P", "_"],
+        ["__", "W1", "__", "W2", "__"],
+        ["__", "__", "__", "__", "__"],
+        ["__", "__", "__", "__", "__"],
+        ["__", "PC", "__", "G1", "__"],
       ],
       winNode: "afterWolf",
       loseNode: "death",
