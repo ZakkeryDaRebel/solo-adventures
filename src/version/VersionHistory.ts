@@ -15,7 +15,7 @@ export const VERSION_HISTORY: VersionEntry[] = [
   {
     version: "v2.0.1",
     commit: "latest",
-    date: "",
+    date: "May 4th, 2026",
     description:
       "Added a way to keep track of the version history of this project (that isn't on GitHub)",
     additions: [
@@ -23,8 +23,8 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Version History file",
       "History Page",
     ],
-    reworks: [""],
-    removals: [""],
+    reworks: [],
+    removals: [],
   },
   {
     version: "v2.0.0",
@@ -56,7 +56,7 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Dice Roller",
       "Test Adventure",
     ],
-    removals: [""],
+    removals: [],
   },
   {
     version: "v1.7.0",
@@ -73,7 +73,7 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Wolf",
     ],
     reworks: ["Story Node", "Fight Page", "Alignment", "Statblock", "Goblin"],
-    removals: [""],
+    removals: [],
   },
   {
     version: "v1.6.0",
@@ -86,7 +86,7 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Players Handbook Guns objects",
     ],
     reworks: ["Martial Melee Weapons objects"],
-    removals: [""],
+    removals: [],
   },
   {
     version: "v1.5.0",
@@ -94,8 +94,8 @@ export const VERSION_HISTORY: VersionEntry[] = [
     date: "May 1st, 2026",
     description: "Added new Weapon objects",
     additions: ["Martial Melee Weapons objects"],
-    reworks: [""],
-    removals: [""],
+    reworks: [],
+    removals: [],
   },
   {
     version: "v1.4.0",
@@ -103,8 +103,8 @@ export const VERSION_HISTORY: VersionEntry[] = [
     date: "April 30th, 2026",
     description: "Added new Armor objects",
     additions: ["Heavy Armor objects"],
-    reworks: [""],
-    removals: [""],
+    reworks: [],
+    removals: [],
   },
   {
     version: "v1.3.0",
@@ -112,17 +112,17 @@ export const VERSION_HISTORY: VersionEntry[] = [
     date: "April 30th, 2026",
     description: "Added new Armor objects",
     additions: ["Light Armor objects", "Medium Armor objects"],
-    reworks: [""],
-    removals: [""],
+    reworks: [],
+    removals: [],
   },
   {
     version: "v1.2.1",
     commit: "cba6dc3",
     date: "April 30th, 2026",
     description: "Swapped constructor for consistency",
-    additions: [""],
+    additions: [],
     reworks: ["Shield object"],
-    removals: [""],
+    removals: [],
   },
   {
     version: "v1.2.0",
@@ -132,7 +132,7 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Reworked the testing system, fixed some imports, and created a new Constructor for weapons and armor",
     additions: ["Simple Plus Num Constructor for Weapons and Shields"],
     reworks: ["Testing System", "Shield object"],
-    removals: [""],
+    removals: [],
   },
   {
     version: "v1.1.0",
@@ -142,7 +142,7 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Added Simple Ranged Weapons, and changed Monster Manual file structure so there will be a package for each starting letter for organization.",
     additions: ["Simple Ranged Weapons"],
     reworks: ["Monster Manual project structure"],
-    removals: [""],
+    removals: [],
   },
   {
     version: "v1.0.0",
@@ -197,6 +197,6 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Adventure Page",
     ],
     reworks: ["File structure", "Import system"],
-    removals: [""],
+    removals: [],
   },
 ];
