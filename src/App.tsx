@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AdventurePage from "./pages/AdventurePage";
+import HistoryPage from "./pages/HistoryPage";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         path="/adventure/:adventureId/:nodeId"
         element={<AdventurePage />}
       />
+      <Route path="/history" element={<HistoryPage />}></Route>
     </Routes>
   );
 }
