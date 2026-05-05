@@ -17,13 +17,13 @@ export const VERSION_HISTORY: VersionEntry[] = [
     commit: "latest",
     date: "May 4th, 2026",
     description:
-      "Added a way to keep track of the version history of this project (that isn't on GitHub)",
+      "Added a way to keep track of the version history of this project (that isn't on GitHub). Updated README with all of this information.",
     additions: [
       "Version Entry template",
       "Version History file",
       "History Page",
     ],
-    reworks: [],
+    reworks: ["App", "README"],
     removals: [],
   },
   {
@@ -72,8 +72,8 @@ export const VERSION_HISTORY: VersionEntry[] = [
       "Action template",
       "Wolf",
     ],
-    reworks: ["Story Node", "Fight Page", "Alignment", "Statblock", "Goblin"],
-    removals: [],
+    reworks: ["Fight Page", "Alignment", "Statblock", "Goblin"],
+    removals: ["Story Node"],
   },
   {
     version: "v1.6.0",
