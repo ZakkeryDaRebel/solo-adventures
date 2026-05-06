@@ -14,7 +14,7 @@ import type { VersionEntry } from "./VersionEntry";
 export const VERSION_HISTORY: VersionEntry[] = [
   {
     version: "v2.0.3",
-    commit: "latest",
+    commit: "441c7dd",
     date: "May 6th, 2024",
     description: "Reworked and fixed test setup",
     additions: ["tsconfig.test.json file"],
