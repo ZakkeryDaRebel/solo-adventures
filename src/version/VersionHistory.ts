@@ -13,9 +13,24 @@ import type { VersionEntry } from "./VersionEntry";
 
 export const VERSION_HISTORY: VersionEntry[] = [
   {
+    version: "v2.0.3",
+    commit: "latest",
+    date: "May 6th, 2024",
+    description: "Reworked and fixed test setup",
+    additions: ["tsconfig.test.json file"],
+    reworks: [
+      "package-lock.json",
+      "package.json",
+      "DiceRoller test",
+      "tsconfig.json",
+      "tsconfig.node.json",
+    ],
+    removals: [],
+  },
+  {
     version: "v2.0.2",
-    commit: "lates",
-    date: "May 5th",
+    commit: "latest",
+    date: "May 5th, 2026",
     description:
       "Added a title to the statblocks, so I can separate the name of the creature, and the title of the statblock",
     additions: [],
