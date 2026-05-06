@@ -1,4 +1,4 @@
-import { Dice, diceConstructor } from "../../../../src/model/dice/Dice";
+import { type Dice, diceConstructor } from "../../../../src/model/dice/Dice";
 import { roll } from "../../../../src/model/dice/DiceRoller";
 
 test("reject invalid diceConstructor formats", () => {
