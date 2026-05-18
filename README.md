@@ -228,7 +228,8 @@
     |       |       \- WeaponConstructor.test.ts
     |       |
     |       \- stats                    D&D Stats tests
-    |           \- CalculateModifier.test.ts
+    |           |- CalculateModifier.test.ts
+    |           \- CalculateSkillModifier.test.ts
     |
     \- playwright                   Playwright tests for frontend react functionality
         |- adventure                   Adventure tests for checking all the branches
