@@ -61,4 +61,5 @@ export * from "./statblocks/SpellcasterStatblock";
 // Stats
 export * from "./stats/AbilityScores";
 export * from "./stats/CalculateModifier";
+export * from "./stats/CalculateSkillModifier";
 export * from "./stats/Skills";
