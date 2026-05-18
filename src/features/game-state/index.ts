@@ -2,5 +2,8 @@
 // index.ts export all Game State information
 //
 
-export * from "./GameState";
+export * from "./AdventureContext";
 export * from "./GameContext";
+export * from "./GameState";
+export * from "./NPCState";
+export * from "./ShopState";
