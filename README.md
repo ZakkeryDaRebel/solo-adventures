@@ -28,10 +28,12 @@
     |- content                      Static / Constant code data (implementations of interfaces)
     |   |- adventures                   Already created Adventures
     |   |   |- dark-forest                  Dark Forest Adventure code
-    |   |   |   \- DarkForestAdventure.ts
+    |   |   |   |- DarkForestAdventure.ts
+    |   |   |   \- DarkForestContext.ts
     |   |   |
     |   |   |- goblin-westwood              Goblin Westwood Adventure code
-    |   |   |   \- GoblinWestwoodAdventure.ts
+    |   |   |   |- GoblinWestwoodAdventure.ts
+    |   |   |   \- GoblinWestwoodContext.ts
     |   |   |
     |   |   \- index.ts                     Barrell file to export all the adventure information
     |   |
@@ -163,9 +165,12 @@
     |   |   \- index.ts                     Barrel file to export all the fight feature's information
     |   |
     |   |- game-state                   Game Context / State feature code (to hold environmental variables)
+    |   |   |- AdventureContext.ts          Interface
     |   |   |- GameContext.ts               Function to use and create the GameState
     |   |   |- GameState.ts                 Interface
-    |   |   \- index.ts                     Barrel file to export all the game state feature's information
+    |   |   |- index.ts                     Barrel file to export all the game state feature's information
+    |   |   |- NPCState.ts                  Interface
+    |   |   \- ShopState.ts                 Interface
     |   |
     |   |- story                        Story feature code
     |   |   |- components                   React .tsx code for the story feature
